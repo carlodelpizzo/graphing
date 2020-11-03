@@ -1,19 +1,22 @@
 from matplotlib import pyplot as plt
 
-label_1 = 'Label 1'
-label_2 = 'Label 2'
-
-list_1 = [0, 1, 2, 3]
-list_2 = [10, 20, 30, 40]
-list_3 = [15, 25, 35, 45]
-
-plt.plot(list_1, list_2, label=label_2)
-plt.plot(list_1, list_3, label=label_1, color='red')
-
-
 plt.title('Title')
-plt.xlabel('X-Label')
-plt.ylabel('Y-Label')
-plt.legend()
 
+plt.xlabel('X-Label')
+x_axis_data = [0, 10, 20, 30]
+
+plt.ylabel('Y-Label')
+
+data_1_label = 'Data 1'
+data_1 = [10, 20, 30, 40]
+data_1_color = 'black'
+
+data_2_label = 'Data 2'
+data_2 = [15, 25, 35, 45]
+data_2_color = 'blue'
+
+plt.plot(x_axis_data, data_1, label=data_1_label, color=data_1_color)
+plt.plot(x_axis_data, data_2, label=data_2_label, color=data_2_color)
+
+plt.legend()
 plt.show()
